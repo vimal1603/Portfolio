@@ -1,0 +1,24 @@
+body{
+    font-size: x-large;
+    color: black;
+}
+@media (max-width:576px){
+    body{
+        font-size: smaller;
+        color: red;
+    }
+}
+@media (min-width:576px) and (max-width:768px)
+{
+    body{
+        font-size: medium;
+        color: brown;
+    }
+}
+@media (min-width:768px) and (max-width:1024px)
+{
+    body{
+        font-size: large;
+        color: chocolate;
+    }
+}
