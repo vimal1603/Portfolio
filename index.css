@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -19,7 +20,9 @@ body {
   align-items: center; /* Center vertically */
   
 }
-
+.btn{
+  display: inline-block;
+}
 ul {
   display: flex;
   align-items: center; /* Center items vertically within ul */
@@ -87,13 +90,16 @@ section {
 .resume {
   padding: 12px;
   font-size: 1rem;
-
+  background-color: rgba(25, 25, 27, 0.8);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .resume a {
-  color: black;
+  color: rgb(255, 255, 255);
+}
+.resume:hover{
+  background-color: #6a2727;
 }
 .link img {
   padding-left: 30px;
@@ -180,6 +186,82 @@ border-radius: 10px;
 .project:hover .layer{
   height: 100%;
 }
+
+.skill-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  width: 80%;
+}
+
+.icon{
+  display: flex;
+  
+
+align-items: center;
+flex-direction: column;
+}
+.icon-img{
+  display: block;
+  overflow: hidden;
+  
+  width: 30%;
+}
+.icon-wrap{
+  flex:25%;
+  margin-bottom: 20px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 250px;
+}
+.left{
+  flex-basis: 35%;
+  margin-top: 5%;
+}
+.left p{
+  
+}
+.right{
+  width: 100%;
+  flex-basis: 60%;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form input,form textarea{
+  width: 100%;
+  border:0;
+  outline: none;
+  background:#262626;
+  padding: 15px;
+  margin: 10px;
+  margin-right: 0;
+  display: flex;
+  color:#fff;
+  font-size: 18px;
+  border-radius: 6px;
+  
+}
+.btn{
+  background-color: rgba(25, 25, 27, 0.8); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+}
+.btn:hover{
+  background-color:#6a2727 ;
+}
 @media (max-width: 500px) {
   .menu {
     display: none;
@@ -189,19 +271,27 @@ border-radius: 10px;
   }
   .phone-menu-bar{
     display: flex;
+  
   }
   .open{
    
    display:grid;
-   grid-template-rows: 4;
-   justify-content: space-around;
-   z-index: 200;
    
+   grid-template-rows: 4;
+   
+   z-index: 200;
+   background-color: transparent;
    
   }
   
+  .info{
+    flex-direction: column;
+    gap: 30px;
+
+  }
   body {
     font-size: medium;
+    overflow-x: hidden;
   }
   .grid1 {
     padding: 0px;
