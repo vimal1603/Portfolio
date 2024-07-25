@@ -7,7 +7,6 @@ body {
 }
 
 /* Navigation */
-
 .grid1 {
   background-color: rgba(25, 25, 27, 0.8);
   display: flex;
@@ -64,9 +63,7 @@ section {
   padding-top: 13vh;
   padding-right: 10vw;
 }
-.link{
-  
-}
+
 .intro {
   font-size: x-large;
 }
@@ -221,9 +218,7 @@ flex-direction: column;
   flex-basis: 35%;
   margin-top: 5%;
 }
-.left p{
-  
-}
+
 .right{
   width: 100%;
   flex-basis: 60%;
@@ -269,10 +264,7 @@ form input,form textarea{
   .phone-menu {
     display: flex;
   }
-  .phone-menu-bar{
-    display: flex;
   
-  }
   .open{
    
    display:grid;

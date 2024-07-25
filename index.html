@@ -13,6 +13,7 @@
           <li>VC</li>
         </ul>
       </div>
+
       <div class="menu">
         <ul>
           <li><a href="#about">About</a></li>
@@ -29,7 +30,7 @@
           width="30"
           onclick="myFunction()"
         />
-        <div style="justify-content: right" class="phone-menu-bar">
+        <div style="justify-content: right" >
           <div
             id="myDIV"
             style="
@@ -42,25 +43,16 @@
             "
           >
             <ul class="open">
-              <li><a href="#about">About</a></li>
-              <li><a href="#project">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about" onclick="myFunction()">About</a></li>
+              <li><a href="#project" onclick="myFunction()">Projects</a></li>
+              <li><a href="#skills" onclick="myFunction()">Skills</a></li>
+              <li><a href="#contact" onclick="myFunction()">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myDIV");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        }
-      </script>
+      
     </nav>
     <section>
       <br />
@@ -253,6 +245,17 @@
         </div>
       </div>
     </section>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
 
     <script src="index.js">
       console.log(a);
