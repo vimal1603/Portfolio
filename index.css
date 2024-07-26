@@ -6,6 +6,29 @@ body {
   overflow-x: hidden;
 }
 
+#home{
+ display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 5;
+  
+}
+.Profile{
+    width: 700px;
+    height:  400px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 7px solid #444444;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    margin-left: 6%;
+    margin-top: 5%;
+}
+.Profile img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
 /* Navigation */
 .grid1 {
   background-color: rgba(25, 25, 27, 0.8);
@@ -114,9 +137,11 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: large;
   color: rgb(255, 255, 255);
-  width: 100%;
 }
-
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
 #portfolio {
   padding: 50px 0;
 }
@@ -182,8 +207,10 @@ p {
 }
 
 .skill-container {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
+  flex-basis: 25%;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -254,8 +281,7 @@ form textarea {
 .btn:hover {
   background-color: #6a2727;
 }
-@media (min-width:576px) and (max-width:768px){
-
+@media (min-width: 576px) and (max-width: 768px) {
 }
 @media (max-width: 500px) {
   .menu {
@@ -264,7 +290,10 @@ form textarea {
   .phone-menu {
     display: flex;
   }
-
+  .skill-container {
+    display: inline-block;
+    flex-basis: 25%;
+  }
   .open {
     display: grid;
 
@@ -273,13 +302,13 @@ form textarea {
     z-index: 200;
     background-color: transparent;
   }
-.open li{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.open li:hover{
-  background-color: #262626;
-}
+  .open li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .open li:hover {
+    background-color: #262626;
+  }
   .info {
     flex-direction: column;
     gap: 30px;
