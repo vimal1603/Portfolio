@@ -10,7 +10,7 @@
     <nav class="grid1">
       <div class="greeting">
         <ul>
-          <li>VC</li>
+          <li><a href="#home">VC</a></li>
         </ul>
       </div>
 
@@ -30,31 +30,38 @@
           width="30"
           onclick="myFunction()"
         />
-        <div style="justify-content: right" >
-          <div
-            id="myDIV"
-            style="
-              display: flex;
-              background-color: transparent;
-              z-index: 500;
-              justify-content: center;
-              padding-left: 25px;
-              padding-right: 5px;
-            "
-          >
-            <ul class="open">
-              <li><a href="#about" onclick="myFunction()">About</a></li>
-              <li><a href="#project" onclick="myFunction()">Projects</a></li>
-              <li><a href="#skills" onclick="myFunction()">Skills</a></li>
-              <li><a href="#contact" onclick="myFunction()">Contact</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-
-      
     </nav>
-    <section>
+    <div
+      style="
+        justify-content: right;
+        background-color: rgba(25, 25, 27, 0.8);
+        position: sticky;
+        top: 57.5px;
+        z-index: 500;
+      "
+    >
+      <div
+        id="myDIV"
+        style="
+          display: none;
+          background-color: transparent;
+          z-index: 500;
+          justify-content: flex-end;
+          padding-left: 25px;
+          padding-right: 5px;
+        "
+      >
+        <ul class="open">
+          <li><a href="#about" onclick="myFunction()">About</a></li>
+          <li><a href="#project" onclick="myFunction()">Projects</a></li>
+          <li><a href="#skills" onclick="myFunction()">Skills</a></li>
+          <li><a href="#contact" onclick="myFunction()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="home">
       <br />
       <p class="intro">Hello,</p>
 
@@ -95,25 +102,25 @@
         /></a>
       </div>
     </section>
-    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p class="aboutme">
-        Hello! I'm a passionate Frontend Developer with a strong foundation in
-        creating visually appealing and user-friendly web interfaces. I have a
-        keen eye for detail and a love for transforming ideas into engaging
-        digital experiences. Currently, I'm expanding my skill set by diving
-        into backend development, aiming to become a versatile full-stack
-        developer. I enjoy working with the latest web technologies and am
-        always eager to learn and grow in this ever-evolving field. I'm excited
-        about the journey ahead and the opportunities to collaborate on
-        innovative projects. Let's create something amazing together!
-      </p>
-      <br />
-      <br />
-      <br />
-    </section>
+   <section id="about">
+  <div class="about-container">
+    <h2 class="section-title">About Me</h2>
+    <p class="aboutme">
+      Hello! I'm a passionate Frontend Developer with a strong foundation in
+      creating visually appealing and user-friendly web interfaces. I have a
+      keen eye for detail and a love for transforming ideas into engaging
+      digital experiences. Currently, I'm expanding my skill set by diving
+      into backend development, aiming to become a versatile full-stack
+      developer. I enjoy working with the latest web technologies and am
+      always eager to learn and grow in this ever-evolving field. I'm excited
+      about the journey ahead and the opportunities to collaborate on
+      innovative projects. Let's create something amazing together!
+    </p>
+  </div>
+</section>
+
 
     <section id="project">
       <div id="portfolio">
@@ -200,7 +207,7 @@
       </div>
     </section>
 
-    <section id="contact" style="margin-top: 50px;">
+    <section id="contact" style="margin-top: 50px">
       <div class="container">
         <h1 class="title">Contact me</h1>
         <div class="info">
@@ -210,14 +217,14 @@
                 src="./Images/mail.png"
                 style="max-width: 30px; height: auto"
               />
-              <p style="flex: 1;">vimalc162020@gmail.com</p>
+              <p style="flex: 1">vimalc162020@gmail.com</p>
             </div>
             <div style="display: flex; align-items: center; gap: 20px">
               <img
                 src="./Images/call-receive.svg"
                 style="max-width: 30px; height: auto"
               />
-              <p style="flex: 1;">+91 7708839327</p>
+              <p style="flex: 1">+91 7708839327</p>
             </div>
           </div>
 
@@ -237,25 +244,24 @@
                 placeholder="Your Message"
                 required
               />
-              <br>
+              <br />
               <button type="submit" class="btn">Submit</button>
             </form>
           </div>
-
         </div>
       </div>
     </section>
 
     <script>
-        function myFunction() {
-          var x = document.getElementById("myDIV");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
         }
-      </script>
+      }
+    </script>
 
     <script src="index.js">
       console.log(a);
